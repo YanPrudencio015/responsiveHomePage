@@ -1,0 +1,562 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0; 
+    outline: none; border: none;
+    scroll-behavior: smooth;
+    transition: .9s;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "inter";
+    src:url(./assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+}
+
+.attribution{
+    height: 40px;
+    width: 45%;
+    margin: auto;
+    border: solid 1px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "inter";
+    font-weight: 400;
+    padding: 10px;
+    background-color:#e5e5e5;
+    color: #d9d9d9;
+}
+
+.attribution:hover{
+    border-radius: 20px;
+    border: solid 1px #f37831;
+    transition: .3s;
+    background-color: #284b63;
+
+}
+
+
+.attribution a{
+color: #ba181b;
+transition: .1s;
+}
+
+.attribution a:hover{
+    color: #e5383b;
+    transition: .1s;
+}
+
+
+body{
+    padding:4%;
+}
+
+svg{
+    width: 6%;
+    float: left;
+}
+
+svg:nth-of-type(2){
+    display: none;
+}
+
+#menu svg{
+    display: none;
+}
+
+#menu{
+    float: right;
+    font-size: 125%;
+}
+#menu a{
+    margin: 0 1rem;
+    font-family: "inter";
+    font-weight: 400;
+    color: black;
+}
+
+#menu a:hover{
+    color: orange;
+    transition: .2s;
+}
+
+
+#main{
+    margin-top: 3rem;
+    width: 100%;
+    height: 30rem;
+    display: grid;
+    grid-template-areas: "G1 G1 G1 G1 G2 G2 G2"
+                         "G1 G1 G1 G1 G2 G2 G2"
+                         "G3 G3 G4 G4 G2 G2 G2"
+                         "G5 G5 G5 G5 G5 G5 G5";
+    margin-bottom: 9rem;
+    font-family: "inter";
+    font-weight: 200;
+    margin-bottom: 19rem;
+}
+
+#main #container1{
+    grid-area: G1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-image: url(assets/images/image-web-3-desktop.jpg);
+    background-size:cover;
+    padding: 11rem 23rem;
+}
+
+#main #container2{
+    margin-left: 2rem;
+    grid-area: G2;
+   border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 84px;
+    background-color: #000000;
+
+}
+
+#main #container2 #title{
+    margin-left: 1rem;
+    padding: 5px;
+    font-size: 37px;
+    font-family: "inter";
+    font-weight: 200;
+    color: #E9AB53;
+}
+
+#main #container2 .info{
+    margin-left: 1rem;
+    padding: 5px;
+    text-align: center;
+    font-family: "inter";
+    font-weight: 200;
+}
+
+#main #container2 .info .InfoMain{
+    color: white;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#main #container2 .info .InfoMain:hover{
+    color: #E9AB53;
+    transition: .1s;
+}
+
+
+#main #container2 .info .infoText{
+    color: #363F58;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+
+
+#main #container3{
+    grid-area: G3;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-family: "inter";
+    font-weight: 200;
+
+}
+
+#main #container3 h1{
+    font-family: "inter";
+    font-weight: 200;
+    font-size: 57px;
+    text-align: initial;
+}
+#main #container4{
+    grid-area: G4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: wrap;
+}
+
+#main #container4 p{
+    font-size: 20px;
+    display: block;
+    font-family: "inter";
+    font-weight: 400;
+
+}
+
+#main #container4 button{
+    border: solid 1px;
+    margin-top: 10px;
+    padding: 1px;
+    width: 10rem;
+    height: 3rem;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-family: "inter";
+    font-weight: 400;
+    background-color: #f37831;
+    color: white;
+    cursor: pointer;
+    transition: .1s;
+}
+
+#main #container4 button:hover{
+    background-color: #000000;
+    transition: .1s;
+}
+
+#main #container5{
+    grid-area: G5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#main #container5 .categ{
+    width: 31%;
+    height: 84%;
+    display: inline-block;
+}
+
+
+#main #container5 .categ img{
+    float: left;
+    height: 100%;
+    width: 25%;
+}
+
+#main #container5 .categ h1{
+    font-size: 32px;
+    margin-left: 8rem;
+    font-family: "inter";
+    font-weight: 200;
+    color: #CAC7CD;
+}
+
+#main #container5 .categ h3{
+    font-size: 22px;
+    margin-left: 8rem;
+    font-family: "inter";
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#main #container5 .categ h3:hover{
+    color: #f37831;
+    transition: .1s;
+}
+
+#main #container5 .categ p{
+    font-size: 1rem;
+    margin-left: 8rem;
+    font-family: "inter";
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:500px){
+
+    body{
+        padding:8%;
+    }
+    
+    svg{
+        width: 13%;
+        float: left;
+    }
+    
+    svg:nth-of-type(2){
+        width: 23%;
+        display: initial;
+        float: right;
+        
+    }
+    
+    #menu svg{
+        display: initial;
+        position: relative;
+        bottom: 9rem;
+        left: 15rem;
+        transition: .1s;
+
+    }
+    
+    #menu{
+        border: solid 1px;
+        font-size: 125%;
+        width: 23rem;
+        height: 103%;
+        position: fixed;
+        left: 35rem;
+        bottom: -1rem;
+        
+        background-color: white;
+    }
+
+    #menu.active{
+        left: 5rem;
+    }
+
+    #menu a{
+        display: block;
+        margin: 4rem 0rem -3rem 2rem;
+    }
+
+    #menu a:active{
+        background-color: #9c9c9c;
+        color: #f37831;
+    }
+
+    #main{
+        margin-top: 3rem;
+        width: 100%;
+        height: 130rem;
+        grid-template-areas:"G1 G1"
+                            "G1 G1"
+                            "G3 G3"
+                            "G4 G4"
+                            "G2 G2"
+                            "G2 G2"
+                            "G2 G2"
+                            "G5 G5"
+                            "G5 G5"
+                            "G5 G5";
+    margin-bottom: 15rem;
+    }
+
+    #main.active{
+        background: rgba(0, 0, 0, .9);
+    }
+
+
+    
+#main #container1{
+    grid-area: G1;
+    background-image: url(assets/images/image-web-3-mobile.jpg);
+    background-size:cover;
+    padding: 9rem;
+
+}
+
+#main #container2{
+    margin-left: -2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+#main #container2 #title{
+    font-size: 43px;
+    font-family: "inter";
+    font-weight: 300;
+
+
+}
+
+#main #container2 .info{
+    padding: 2rem;
+}
+
+
+
+#main #container2 .info .InfoMain{
+ font-size: 19px;
+}
+
+#main #container2 .info .InfoMain:hover{
+    color: aquamarine;
+}
+
+#main #container2 .info .infoText{
+    font-size: 17px;
+    font-family: "inter";
+    font-weight: 300;
+}
+
+/* 
+#main #container3{
+
+} */
+
+#main #container3 h1{
+    font-size: 43px;
+    font-family: "inter";
+    font-weight: 400;
+}
+
+
+#main #container4{
+    text-align: center;
+    padding: 2rem;
+}
+
+#main #container4 p{
+    font-size: 25px;
+    font-family: "inter";
+    font-weight: 400;
+    text-align: initial;
+}
+
+#main #container4 button{
+    font-size: 19px;
+    font-family: "inter";
+    font-weight: 200;
+    width: 13rem;
+    height: 5rem;
+    padding: 21px;
+    letter-spacing: 5px;
+    background-color: #f37831;
+}
+#main #container4 button:hover{
+background-color: #E9AB53;
+}
+
+#main #container4 button:active{
+    background-color: #f37831;
+}
+
+
+#main #container5{
+    margin-top: 5rem;
+    grid-area: G5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#main #container5 .categ{
+    margin: 1rem 0rem;
+    width: 100%;
+    height: 34%;
+    display: inline-block;
+}
+
+
+#main #container5 .categ img{
+    float: left;
+    height: 100%;
+    width: 38%;
+}
+
+#main #container5 .categ h1{
+    font-size: 28px;
+    margin-left: 8rem;
+    font-family: "inter";
+    font-weight: 200;
+    color: #CAC7CD;
+}
+
+#main #container5 .categ h3{
+    font-size: 19px;
+    margin-left: 8rem;
+    font-family: "inter";
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+
+#main #container5 .categ p{
+    font-size: 1rem;
+    margin-left: 8rem;
+    font-family: "inter";
+    font-weight: 400;
+}
+
+
+
+
+.attribution{
+    height: 80px;
+    width: 100%;
+    margin: auto;
+    border: solid 1px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 19px;
+    font-family: "inter";
+    font-weight: 400;
+    padding: 10px;
+    background-color: #284b63;
+    color: #d9d9d9;
+    margin-top: 21rem;
+    margin-bottom: 18rem;
+}
+
+.attribution:hover{
+    border-radius: 20px;
+    border: solid 1px #f37831;
+    transition: .3s;
+    background-color: #284b63;
+
+}
+
+
+.attribution a{
+color: #ba181b;
+transition: .1s;
+}
+
+.attribution a:hover{
+    color: #e5383b;
+    transition: .1s;
+}
+
+
+}
